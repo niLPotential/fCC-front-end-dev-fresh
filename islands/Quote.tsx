@@ -12,10 +12,7 @@ export default function Quote() {
   const handleNewQuote = () => setQuote(getRandomQuote());
 
   return (
-    <div
-      id="quote-box"
-      style={{ margin: "0 auto", width: "50%", textAlign: "center" }}
-    >
+    <div id="quote-box">
       <div id="text">
         {quote.quote}
       </div>

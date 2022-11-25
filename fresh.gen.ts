@@ -8,7 +8,7 @@ import * as $1 from "./routes/clock.tsx";
 import * as $2 from "./routes/drum-machine.tsx";
 import * as $3 from "./routes/index.tsx";
 import * as $4 from "./routes/markdown-previewer.tsx";
-import * as $5 from "./routes/random-quote-machine/index.tsx";
+import * as $5 from "./routes/random-quote-machine.tsx";
 import * as $$0 from "./islands/Quote.tsx";
 
 const manifest = {
@@ -18,7 +18,7 @@ const manifest = {
     "./routes/drum-machine.tsx": $2,
     "./routes/index.tsx": $3,
     "./routes/markdown-previewer.tsx": $4,
-    "./routes/random-quote-machine/index.tsx": $5,
+    "./routes/random-quote-machine.tsx": $5,
   },
   islands: {
     "./islands/Quote.tsx": $$0,
