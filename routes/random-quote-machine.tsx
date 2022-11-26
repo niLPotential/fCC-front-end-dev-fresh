@@ -4,7 +4,7 @@ import Quote from "../islands/Quote.tsx";
 
 export default function RandomQuoteMachine() {
   return (
-    <div>
+    <>
       <Head>
         <title>Random Quote Machine</title>
         <link
@@ -14,6 +14,6 @@ export default function RandomQuoteMachine() {
       </Head>
       <Quote />
       <Tests />
-    </div>
+    </>
   );
 }

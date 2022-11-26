@@ -9,7 +9,8 @@ import * as $2 from "./routes/drum-machine.tsx";
 import * as $3 from "./routes/index.tsx";
 import * as $4 from "./routes/markdown-previewer.tsx";
 import * as $5 from "./routes/random-quote-machine.tsx";
-import * as $$0 from "./islands/Quote.tsx";
+import * as $$0 from "./islands/Markdown.tsx";
+import * as $$1 from "./islands/Quote.tsx";
 
 const manifest = {
   routes: {
@@ -21,7 +22,8 @@ const manifest = {
     "./routes/random-quote-machine.tsx": $5,
   },
   islands: {
-    "./islands/Quote.tsx": $$0,
+    "./islands/Markdown.tsx": $$0,
+    "./islands/Quote.tsx": $$1,
   },
   baseUrl: import.meta.url,
   config,
