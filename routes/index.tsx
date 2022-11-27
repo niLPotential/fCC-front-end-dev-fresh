@@ -1,11 +1,11 @@
-// import { Head } from "$fresh/runtime.ts";
+import { Head } from "$fresh/runtime.ts";
 
 export default function Home() {
   return (
     <>
-      <head>
-        <title>Fresh App</title>
-      </head>
+      <Head>
+        <title>Front End Dev Projects</title>
+      </Head>
       <div>
         <a href="/random-quote-machine">Random Quote Machine</a>
         <a href="/markdown-previewer">Markdown Previewer</a>

@@ -3,7 +3,7 @@ import * as marked from "https://cdnjs.cloudflare.com/ajax/libs/marked/4.2.3/lib
 import { sampleMarkdown } from "../static/markdown-sample.ts";
 
 export default function Markdown() {
-  const [text, setText] = useState(sampleMarkdown);
+  const [text, setText] = useState("");
 
   const handleTextInput = (e: Event) => {
     setText((e.target as HTMLTextAreaElement).value);
@@ -15,7 +15,7 @@ export default function Markdown() {
         id="editor"
         onInput={handleTextInput}
       >
-        {text}
+        {sampleMarkdown}
       </textarea>
 
       <div

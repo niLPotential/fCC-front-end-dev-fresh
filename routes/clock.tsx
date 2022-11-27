@@ -1,10 +1,12 @@
-// import { Head } from "$fresh/runtime.ts";
+import { Head } from "$fresh/runtime.ts";
 import Tests from "../components/Tests.tsx";
 
 export default function () {
   return (
-    <div>
-      <head>25 + 5 Clock</head>
+    <>
+      <Head>
+        <title>25 + 5 Clock</title>
+      </Head>
       <div>
         <div id="break-label">Break Length</div>
         <div id="session-label">Session Length</div>
@@ -14,6 +16,6 @@ export default function () {
         <button id="session-Increment">Session Increment</button>
       </div>
       <Tests />
-    </div>
+    </>
   );
 }

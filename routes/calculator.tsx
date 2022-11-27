@@ -1,10 +1,12 @@
-// import { Head } from "$fresh/runtime.ts";
+import { Head } from "$fresh/runtime.ts";
 import Tests from "../components/Tests.tsx";
 
 export default function Calculator() {
   return (
-    <div>
-      <head>JavaScript Calculator</head>
+    <>
+      <Head>
+        <title>JavaScript Calculator</title>
+      </Head>
       <div>
         <button id="equals">=</button>
         <button id="zero">0</button>
@@ -26,6 +28,6 @@ export default function Calculator() {
         <div id="display">Display</div>
       </div>
       <Tests />
-    </div>
+    </>
   );
 }
