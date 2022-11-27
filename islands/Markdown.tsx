@@ -1,30 +1,36 @@
-import { useState } from "preact/hooks";
 import * as marked from "https://cdnjs.cloudflare.com/ajax/libs/marked/4.2.3/lib/marked.esm.min.js";
 import { sampleMarkdown } from "../static/markdown-sample.ts";
 
-export default function Markdown() {
-  const [text, setText] = useState("");
+marked.setOptions({
+  breaks: true,
+});
 
+export default function Markdown() {
   const handleTextInput = (e: Event) => {
-    setText((e.target as HTMLTextAreaElement).value);
+    (document.getElementById("preview") as HTMLElement).innerHTML = marked
+      .parse(
+        (e.target as HTMLTextAreaElement).value,
+      );
   };
+
+  addEventListener("load", () => {
+    const initialText =
+      (document.getElementById("editor") as HTMLTextAreaElement).value;
+    (document.getElementById("preview") as HTMLElement).innerHTML = marked
+      .parse(initialText);
+  });
 
   return (
     <div id="markdown-box">
       <textarea
         id="editor"
+        type="text"
         onInput={handleTextInput}
       >
         {sampleMarkdown}
       </textarea>
 
-      <div
-        id="preview"
-        dangerouslySetInnerHTML={{
-          __html: marked.parse(text),
-        }}
-      >
-        {text}
+      <div id="preview">
       </div>
     </div>
   );
