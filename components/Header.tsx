@@ -15,13 +15,15 @@ export default function Header({ active }: Props) {
   ];
 
   return (
-    <div>
+    <div id="header">
       <link rel="stylesheet" href={asset("header.css")} />
       <div>Front End Dev Projects</div>
       <ul>
         {menus.map((menu) => (
           <li>
-            <a href="menu.href">{menu.name}</a>
+            <a id={menu.href === active ? "active" : ""} href={menu.href}>
+              {menu.name}
+            </a>
           </li>
         ))}
       </ul>
