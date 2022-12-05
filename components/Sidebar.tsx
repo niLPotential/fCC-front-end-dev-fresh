@@ -15,8 +15,8 @@ export default function Header({ active }: Props) {
   ];
 
   return (
-    <div id="header">
-      <link rel="stylesheet" href={asset("header.css")} />
+    <div id="sidebar">
+      <link rel="stylesheet" href={asset("sidebar.css")} />
       <div>Front End Dev Projects</div>
       <ul>
         {menus.map((menu) => (
