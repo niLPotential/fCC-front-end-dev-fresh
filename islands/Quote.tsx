@@ -1,4 +1,3 @@
-import { useState } from "preact/hooks";
 import quotesList from "../static/quotes.json" assert { type: "json" };
 
 export default function Quote() {
@@ -7,9 +6,14 @@ export default function Quote() {
       .quotes[Math.floor(Math.random() * quotesList.quotes.length)];
   };
 
-  const [quote, setQuote] = useState(getRandomQuote);
+  const handleNewQuote = () => {
+    const newQuote = getRandomQuote();
+    (document.getElementById("text") as HTMLElement).innerText = newQuote.quote;
+    (document.getElementById("author") as HTMLElement).innerText =
+      newQuote.author;
+  };
 
-  const handleNewQuote = () => setQuote(getRandomQuote());
+  const quote = getRandomQuote();
 
   return (
     <div id="quote-box">
