@@ -1,4 +1,5 @@
 import { Head } from "$fresh/runtime.ts";
+import Header from "../components/Header.tsx";
 
 export default function Home() {
   return (
@@ -6,6 +7,7 @@ export default function Home() {
       <Head>
         <title>Front End Dev Projects</title>
       </Head>
+      <Header active="/" />
       <div>
         <a href="/random-quote-machine">Random Quote Machine</a>
         <a href="/markdown-previewer">Markdown Previewer</a>

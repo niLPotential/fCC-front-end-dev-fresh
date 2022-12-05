@@ -1,4 +1,6 @@
 import { Head } from "$fresh/runtime.ts";
+import Pomodoro from "../islands/Pomodoro.tsx";
+import Header from "../components/Header.tsx";
 import Tests from "../components/Tests.tsx";
 
 export default function () {
@@ -7,14 +9,10 @@ export default function () {
       <Head>
         <title>25 + 5 Clock</title>
       </Head>
-      <div>
-        <div id="break-label">Break Length</div>
-        <div id="session-label">Session Length</div>
-        <button id="break-decrement">Break Decrement</button>
-        <button id="session-decrement">Session Decrement</button>
-        <button id="break-Increment">Break Increment</button>
-        <button id="session-Increment">Session Increment</button>
-      </div>
+
+      <Header active="/clock" />
+      <Pomodoro />
+
       <Tests />
     </>
   );
