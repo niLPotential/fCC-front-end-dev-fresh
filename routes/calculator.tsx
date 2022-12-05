@@ -1,6 +1,6 @@
 import { asset, Head } from "$fresh/runtime.ts";
 import Calculator from "../islands/Calculator.tsx";
-import Header from "../components/Header.tsx";
+import Sidebar from "../components/Sidebar.tsx";
 import Tests from "../components/Tests.tsx";
 
 export default function CalculatorPage() {
@@ -11,7 +11,7 @@ export default function CalculatorPage() {
         <link rel="stylesheet" href={asset("calculator.css")} />
       </Head>
 
-      <Header active="/calculator" />
+      <Sidebar active="/calculator" />
       <Calculator />
 
       <Tests />

@@ -1,6 +1,6 @@
 import { asset, Head } from "$fresh/runtime.ts";
 import Markdown from "../islands/Markdown.tsx";
-import Header from "../components/Header.tsx";
+import Sidebar from "../components/Sidebar.tsx";
 import Tests from "../components/Tests.tsx";
 
 export default function MarkdownPreviewer() {
@@ -11,7 +11,7 @@ export default function MarkdownPreviewer() {
         <link rel="stylesheet" href={asset("markdown-previewer.css")} />
       </Head>
 
-      <Header active="/markdown-previewer" />
+      <Sidebar active="/markdown-previewer" />
       <Markdown />
       <Tests />
     </>

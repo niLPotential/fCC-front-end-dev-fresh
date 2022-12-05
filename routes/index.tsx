@@ -1,5 +1,5 @@
 import { Head } from "$fresh/runtime.ts";
-import Header from "../components/Header.tsx";
+import Sidebar from "../components/Sidebar.tsx";
 
 export default function Home() {
   return (
@@ -7,7 +7,7 @@ export default function Home() {
       <Head>
         <title>Front End Dev Projects</title>
       </Head>
-      <Header active="/" />
+      <Sidebar active="/" />
     </>
   );
 }

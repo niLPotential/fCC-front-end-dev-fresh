@@ -1,4 +1,4 @@
-#header {
+#sidebar {
     color: burlywood;
     position: fixed;
     height: 100%;
@@ -8,7 +8,7 @@
     background-color: aquamarine;
 }
 
-#header a {
+#sidebar a {
     text-decoration: none;
 }
 

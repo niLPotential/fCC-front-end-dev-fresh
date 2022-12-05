@@ -1,6 +1,6 @@
 import { asset, Head } from "$fresh/runtime.ts";
 import Tests from "../components/Tests.tsx";
-import Header from "../components/Header.tsx";
+import Sidebar from "../components/Sidebar.tsx";
 import Quote from "../islands/Quote.tsx";
 
 export default function RandomQuoteMachine() {
@@ -14,7 +14,7 @@ export default function RandomQuoteMachine() {
         />
       </Head>
 
-      <Header active="/random-quote-machine" />
+      <Sidebar active="/random-quote-machine" />
       <Quote />
       <Tests />
     </>
