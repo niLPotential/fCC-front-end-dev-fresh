@@ -13,12 +13,19 @@ export default function Header({ active }: Props) {
   ];
 
   return (
-    <div id="sidebar">
-      <div>Front End Dev Projects</div>
+    <div class="h-full bg-yellow-200 fixed">
+      <div>
+        <div>
+          Front End Dev Projects
+        </div>
+      </div>
       <ul>
         {menus.map((menu) => (
           <li>
-            <a id={menu.href === active ? "active" : ""} href={menu.href}>
+            <a
+              href={menu.href}
+              class={menu.href === active ? "font-bold" : ""}
+            >
               {menu.name}
             </a>
           </li>
