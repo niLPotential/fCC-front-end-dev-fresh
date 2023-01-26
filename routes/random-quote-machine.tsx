@@ -12,7 +12,9 @@ export default function RandomQuoteMachine() {
       </Head>
 
       <Sidebar active="/random-quote-machine" />
-      <Quote />
+      <div className="h-screen flex items-center justify-center">
+        <Quote />
+      </div>
       <Tests />
     </>
   );
