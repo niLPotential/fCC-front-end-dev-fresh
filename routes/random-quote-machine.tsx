@@ -8,7 +8,6 @@ export default function RandomQuoteMachine() {
     <>
       <Head>
         <title>Random Quote Machine</title>
-        <link rel="stylesheet" />
       </Head>
 
       <Sidebar active="/random-quote-machine" />
